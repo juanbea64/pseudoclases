@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases y pseudoelemntos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Pseudoclases y pseudoelemntos</h1>
+    
+   <!-- empty -->
+
+   <div class="padre1 padre">
+       <section class="contenedor"></section>
+       <div class="contenedor">No estoy vacio , soy azul</div>
+       <section class="contenedor"></section>
+       <section class="contenedor">No estoy vacio , soy azul</section>
+       <div class="contenedor"></div>
+       
+   </div>
+
+   <!-- first-of-type -->
+ 
+   <div class="padre">
+        <a href="#">Enlace 1</a>
+        <a href="#">Enlacem 2</a>
+   </div>
+   <!-- focus -->
+ 
+   <div class="padre">
+        <input type="text" class="blue-input" value="Color azul cuando me opriman">
+   </div>
+
+    <!-- invalid -->
+    <div class="padre">
+        <label>Ingresa una URL:</label>
+        <input type="url" class="url_input" />
+    </div>
+
+    <!-- invalid -->
+     <div class="padre">
+         <label>Ingresa una Email:</label>
+         <input type="email" class="email_input" />
+     </div>
+
+     <!--last-of-type -->
+     <div class="padre">
+        <ul>
+            <li  class="lista">Elemento 1</li>
+            <li class="lista">Elemento 2</li>
+            <li class="lista">Elemento 3</li>
+        </ul>
+    </div>
+
+     <!--only-of-type -->
+     <div class="padre padre3">
+            <i>Yo soy el único hijo `i`.</i>
+            <em>Soy un `em` #1.</em>
+            <em>Soy un `em` #2.</em>
+    </div>
+
+    <!-- out-of-range-->
+    <div class="padre">
+        <label>Ingresa una texto:</label>
+        <input type="number" class="text_input" min="1" max="10"/>
+    </div>
+
+     <!-- read only-->
+     <div class="padre">
+        <label>Ingresa una texto:</label>
+        <input type="text" value="Esto solo se puede leer" class="text2_input" readonly/>
+    </div>
+    
+    <!-- full screen -->
+     <div class="padre">
+        <span>Elemento 1</span>
+        <span>Elemento 2</span>
+        <em>Elemento 3</em>
+        <span>Elemento 4</span>
+        <span>Elemento 5</span>
+     </div>
+
+
+    
+</div>
+
+</body>
+</html>
